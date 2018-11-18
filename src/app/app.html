@@ -1,0 +1,22 @@
+<ion-menu [content]="content">
+    <ion-header>
+        <ion-toolbar color = "primary">
+            <ion-title>Menu</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-list>
+        <br>
+            <button ion-item (click)="openPage(friendsPage)">
+              Friends
+            </button>
+            <button ion-item (click)="login()">
+                <ion-icon name="contact" item-start></ion-icon>
+                    LOGIN
+            </button>
+            <button ion-item (click)="titlecartoon()">
+                <ion-icon name="ios-book-outline" item-start></ion-icon>
+             Title Cartoon
+            </button>
+          </ion-list>
+</ion-menu>
+<ion-nav #content [root]="rootPage"></ion-nav>
